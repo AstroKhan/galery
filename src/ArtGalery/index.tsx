@@ -26,10 +26,9 @@ export const ArtGalery: React.FC<ArtGaleryProps> = ({ photos }) => {
         prevPhoto={prevPhoto}
         activePhoto={activePhoto}
         nextPhoto={nextPhoto}
-        className={style.artMainPhoto}
         />
         <Navigation 
-        className={style.artNavigation}
+        className={style.artGaleryNavigation}
         disabledPrev={!prevPhoto}
         disabledNext={!nextPhoto}
         onPrevClick = {() => {
@@ -43,7 +42,7 @@ export const ArtGalery: React.FC<ArtGaleryProps> = ({ photos }) => {
       <PreviewGalery 
       activePhotoIndex={indexActivePhoto}
       photos={photos}
-      className={style.artPreviewList}/>
+      className={style.artGaleryPreviewList}/>
     </div>
   );
 };
